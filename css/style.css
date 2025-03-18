@@ -926,16 +926,8 @@ html {
   margin-top: 3rem;
 }
 
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
 .mt-\[72px\] {
   margin-top: 72px;
-}
-
-.mt-\[72p\] {
-  margin-top: 72p;
 }
 
 .flex {
@@ -969,6 +961,18 @@ html {
 
 .h-full {
   height: 100%;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-2\/5 {
+  height: 40%;
+}
+
+.h-3\/5 {
+  height: 60%;
 }
 
 .max-h-\[450px\] {
@@ -1006,10 +1010,6 @@ html {
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
-}
-
-.max-w-\[425px\] {
-  max-width: 425px;
 }
 
 .max-w-\[530px\] {
@@ -1112,12 +1112,8 @@ html {
   gap: 1.5rem;
 }
 
-.gap-96p {
-  gap: 6rem;
-}
-
-.gap-48p {
-  gap: 3rem;
+.place-self-center {
+  place-self: center;
 }
 
 .overflow-scroll {
@@ -1126,6 +1122,10 @@ html {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
@@ -1195,6 +1195,11 @@ html {
   padding-bottom: 0.5rem;
 }
 
+.px-24p {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1212,7 +1217,7 @@ html {
 }
 
 .text-2xl {
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .text-3xl {
@@ -1230,10 +1235,6 @@ html {
 
 .text-sm {
   font-size: 16px;
-}
-
-.text-xl {
-  font-size: 24px;
 }
 
 .text-xs {
@@ -1385,10 +1386,6 @@ html {
     justify-content: space-between;
   }
 
-  .md\:place-self-center {
-    place-self: center;
-  }
-
   .md\:px-9 {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
@@ -1487,6 +1484,10 @@ html {
   .lg\:text-xl {
     font-size: 24px;
   }
+
+  .lg\:text-display {
+    font-size: 60px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -1543,9 +1544,5 @@ html {
 
   .xl\:text-base {
     font-size: 18px;
-  }
-
-  .xl\:text-huge {
-    font-size: 80px;
   }
 }
