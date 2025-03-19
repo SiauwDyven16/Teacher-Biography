@@ -57,7 +57,7 @@ module.exports = {
       
       fontFamily: {
         outfit : ['Outfit', 'sans-serif'],
-        figtree : ['Figtree', 'sans-serif'],
+        courier : ['Courier Prime', 'monospace'],
       },
 
       width : {

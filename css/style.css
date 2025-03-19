@@ -750,26 +750,6 @@ html {
   --bc: 74.6477% 0.0216 264.435964;
 }
 
-@media (hover:hover) {
-  .label a:hover {
-    --tw-text-opacity: 1;
-    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
-  }
-}
-
-.label {
-  display: flex;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .link {
   cursor: pointer;
   text-decoration-line: underline;
@@ -815,11 +795,6 @@ html {
 .swap-active .swap-on,
 .swap input:indeterminate ~ .swap-indeterminate {
   opacity: 1;
-}
-
-.btm-nav > * .label {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 @keyframes button-pop {
@@ -931,14 +906,6 @@ html {
   }
 }
 
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -951,8 +918,8 @@ html {
   grid-column: span 3 / span 3;
 }
 
-.m-48p {
-  margin: 3rem;
+.m-auto {
+  margin: auto;
 }
 
 .my-48p {
@@ -960,13 +927,12 @@ html {
   margin-bottom: 3rem;
 }
 
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 .mt-12p {
   margin-top: 0.75rem;
+}
+
+.mt-24p {
+  margin-top: 1.5rem;
 }
 
 .mt-4 {
@@ -981,14 +947,6 @@ html {
   margin-top: 72px;
 }
 
-.-mt-24p {
-  margin-top: -1.5rem;
-}
-
-.mt-24p {
-  margin-top: 1.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -1001,14 +959,14 @@ html {
   display: none;
 }
 
-.size-18p {
-  width: 1.125rem;
-  height: 1.125rem;
-}
-
 .size-12p {
   width: 0.75rem;
   height: 0.75rem;
+}
+
+.size-18p {
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 .h-\[1px\] {
@@ -1052,12 +1010,13 @@ html {
   width: 100%;
 }
 
-.w-100 {
-  width: 100rem;
-}
-
 .w-screen {
   width: 100vw;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .min-w-\[150px\] {
@@ -1105,10 +1064,6 @@ html {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -1119,6 +1074,10 @@ html {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -1181,24 +1140,12 @@ html {
   gap: 1.5rem;
 }
 
-.gap-48p {
-  gap: 3rem;
-}
-
 .gap-96p {
   gap: 6rem;
 }
 
-.gap-\[96p\] {
-  gap: 96p;
-}
-
-.gap-\[192px\] {
-  gap: 192px;
-}
-
-.gap-y-48p {
-  row-gap: 3rem;
+.gap-48p {
+  gap: 3rem;
 }
 
 .place-self-center {
@@ -1221,11 +1168,6 @@ html {
   border-width: 1px;
 }
 
-.border-y {
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-}
-
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1238,6 +1180,11 @@ html {
   border-top-width: 1px;
 }
 
+.border-heading {
+  --tw-border-opacity: 1;
+  border-color: rgb(33 37 41 / var(--tw-border-opacity, 1));
+}
+
 .border-secondary {
   --tw-border-opacity: 1;
   border-color: rgb(73 80 87 / var(--tw-border-opacity, 1));
@@ -1248,14 +1195,9 @@ html {
   border-color: rgb(206 212 218 / var(--tw-border-opacity, 1));
 }
 
-.border-primary {
-  --tw-border-opacity: 1;
-  border-color: rgb(52 58 64 / var(--tw-border-opacity, 1));
-}
-
-.border-heading {
-  --tw-border-opacity: 1;
-  border-color: rgb(33 37 41 / var(--tw-border-opacity, 1));
+.bg-heading {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 37 41 / var(--tw-bg-opacity, 1));
 }
 
 .bg-page {
@@ -1278,10 +1220,6 @@ html {
      object-fit: cover;
 }
 
-.p-36p {
-  padding: 2.25rem;
-}
-
 .p-24p {
   padding: 1.5rem;
 }
@@ -1301,6 +1239,11 @@ html {
   padding-right: 2rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1314,6 +1257,16 @@ html {
 .py-8p {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-96p {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
 }
 
 .pb-4 {
@@ -1344,6 +1297,10 @@ html {
   font-family: Outfit, sans-serif;
 }
 
+.font-courier {
+  font-family: Courier Prime, monospace;
+}
+
 .text-2xl {
   font-size: 36px;
 }
@@ -1365,12 +1322,12 @@ html {
   font-size: 16px;
 }
 
-.text-xs {
-  font-size: 14px;
-}
-
 .text-xl {
   font-size: 24px;
+}
+
+.text-xs {
+  font-size: 14px;
 }
 
 .font-light {
@@ -1398,6 +1355,11 @@ html {
   color: rgb(33 37 41 / var(--tw-text-opacity, 1));
 }
 
+.text-page {
+  --tw-text-opacity: 1;
+  color: rgb(248 249 250 / var(--tw-text-opacity, 1));
+}
+
 .text-paragraph {
   --tw-text-opacity: 1;
   color: rgb(73 80 87 / var(--tw-text-opacity, 1));
@@ -1416,6 +1378,14 @@ html {
 .text-tertiary {
   --tw-text-opacity: 1;
   color: rgb(206 212 218 / var(--tw-text-opacity, 1));
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
+.opacity-40 {
+  opacity: 0.4;
 }
 
 .transition {
@@ -1478,12 +1448,12 @@ html {
     display: none;
   }
 
-  .md\:h-\[300px\] {
-    height: 300px;
-  }
-
   .md\:h-\[267px\] {
     height: 267px;
+  }
+
+  .md\:h-\[300px\] {
+    height: 300px;
   }
 
   .md\:w-24p {
@@ -1522,38 +1492,23 @@ html {
     justify-content: space-between;
   }
 
-  .md\:gap-24p {
-    gap: 1.5rem;
-  }
-
   .md\:gap-x-24p {
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
-  }
-
-  .md\:gap-y-48p {
-    row-gap: 3rem;
-  }
-
-  .md\:gap-y-96p {
-    row-gap: 6rem;
   }
 
   .md\:gap-y-24p {
     row-gap: 1.5rem;
   }
 
-  .md\:border {
-    border-width: 1px;
-  }
-
-  .md\:border-0 {
-    border-width: 0px;
-  }
-
   .md\:px-9 {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
+  }
+
+  .md\:py-96p {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .md\:pb-6 {
@@ -1569,20 +1524,20 @@ html {
     font-size: 18px;
   }
 
-  .md\:text-display {
-    font-size: 60px;
-  }
-
   .md\:text-lg {
     font-size: 20px;
+  }
+
+  .md\:text-sm {
+    font-size: 16px;
   }
 
   .md\:text-xl {
     font-size: 24px;
   }
 
-  .md\:text-sm {
-    font-size: 16px;
+  .md\:text-2xl {
+    font-size: 36px;
   }
 }
 
@@ -1679,12 +1634,20 @@ html {
     font-size: 18px;
   }
 
+  .lg\:text-display {
+    font-size: 60px;
+  }
+
   .lg\:text-xl {
     font-size: 24px;
   }
 
-  .lg\:text-display {
-    font-size: 60px;
+  .lg\:text-2xl {
+    font-size: 36px;
+  }
+
+  .lg\:text-sm {
+    font-size: 16px;
   }
 }
 
