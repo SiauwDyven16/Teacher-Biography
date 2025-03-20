@@ -750,6 +750,34 @@ html {
   --bc: 74.6477% 0.0216 264.435964;
 }
 
+.footer {
+  display: grid;
+  width: 100%;
+  grid-auto-flow: row;
+  place-items: start;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.footer > * {
+  display: grid;
+  place-items: start;
+  gap: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+  .footer {
+    grid-auto-flow: column;
+  }
+
+  .footer-center {
+    grid-auto-flow: row dense;
+  }
+}
+
 .link {
   cursor: pointer;
   text-decoration-line: underline;
@@ -922,23 +950,9 @@ html {
   margin: auto;
 }
 
-.m-\[72px\] {
-  margin: 72px;
-}
-
 .my-48p {
   margin-top: 3rem;
   margin-bottom: 3rem;
-}
-
-.my-\[72px\] {
-  margin-top: 72px;
-  margin-bottom: 72px;
-}
-
-.my-\[72p\] {
-  margin-top: 72p;
-  margin-bottom: 72p;
 }
 
 .mt-12p {
@@ -947,14 +961,6 @@ html {
 
 .mt-24p {
   margin-top: 1.5rem;
-}
-
-.mt-48p {
-  margin-top: 3rem;
-}
-
-.mt-\[72px\] {
-  margin-top: 72px;
 }
 
 .flex {
@@ -987,8 +993,8 @@ html {
   height: 360px;
 }
 
-.h-\[40vh\] {
-  height: 40vh;
+.h-\[70vh\] {
+  height: 70vh;
 }
 
 .h-fit {
@@ -998,18 +1004,6 @@ html {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[70vh\] {
-  height: 70vh;
 }
 
 .max-h-\[450px\] {
@@ -1040,10 +1034,6 @@ html {
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-default {
@@ -1160,7 +1150,7 @@ html {
 
 .bg-page {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 249 250 / var(--tw-bg-opacity, 1));
+  background-color: rgb(239 239 239 / var(--tw-bg-opacity, 1));
 }
 
 .bg-primary {
@@ -1296,7 +1286,7 @@ html {
 
 .text-page {
   --tw-text-opacity: 1;
-  color: rgb(248 249 250 / var(--tw-text-opacity, 1));
+  color: rgb(239 239 239 / var(--tw-text-opacity, 1));
 }
 
 .text-paragraph {
@@ -1317,14 +1307,6 @@ html {
 .text-tertiary {
   --tw-text-opacity: 1;
   color: rgb(206 212 218 / var(--tw-text-opacity, 1));
-}
-
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 @media (min-width: 768px) {

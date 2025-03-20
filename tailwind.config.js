@@ -49,7 +49,7 @@ module.exports = {
       colors: {
         heading : "#212529",
         paragraph: "#495057",
-        page : "#F8F9FA",
+        page : "#efefef",
         primary : "#343A40",
         secondary : "#495057",
         tertiary : "#CED4DA",
@@ -73,6 +73,12 @@ module.exports = {
           acc[cur] = `${cur}rem`;
           return acc;
         }, {}),
+      },
+      animation:{
+        'spin-slow': 'spin 3s linear infinite',
+        'spin-slow-reverse': 'spin 3s linear infinite reverse',
+        'ping-slow': 'ping 3s cubic-bezier(0, 0, 0.2, 1) infinite',
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       }
     },
   },

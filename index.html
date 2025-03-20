@@ -8,29 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         * {
             scrollbar-width: none;
         }
-        .color-change {
-            transition: color 0.5s ease, transform 0.5s ease;
-        }
-        
-        .color-primary {
-            color: #343A40;
-            /*transform: scale(1.1);*/
-        }
-        
-        .color-tertiary {
-            color: #CED4DA;
-        }
-        
-        /* Hover effect */
-        .color-change:hover {
-            color: #343A40;
-            transform: scale(1.1);
-        }
-
     </style>    
 </head>
         <body class="cursor-default flex flex-col gap-96p font-outfit bg-page text-primary">
@@ -45,18 +27,18 @@
                 </nav>
                 <div class="col-span-3  flex flex-col gap-24p md:grid grid-cols-3">
                     <div class="flex flex-col gap-24p md:col-span-3 xl:col-span-2">
-                        <h1 class="hidden md:block text-display text-tertiary font-semibold leading-3xlLH">WHO IS</h1>
-                        <h1 class="hidden md:block text-display text-primary font-semibold leading-3xlLH">GUS MAHA INDRA <span class="text-tertiary">?<span></h1>
+                        <h1 class="hidden md:block text-display text-tertiary font-semibold leading-3xlLH" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">WHO IS</h1>
+                        <h1 class="hidden md:block text-display text-primary font-semibold leading-3xlLH" data-aos="fade-right" data-aos-duration="1500">GUS MAHA INDRA <span class="text-tertiary">?<span></h1>
                         <div class="flex flex-col">
-                            <h1 class="flex justify-start text-display text-primary font-semibold leading-3xlLH md:hidden">MAHA</h1>
-                            <h1 class="flex justify-end text-display text-primary font-semibold leading-3xlLH md:hidden">INDRA</h1>
+                            <h1 class="flex justify-start text-display text-primary font-semibold leading-3xlLH md:hidden" data-aos="fade-right" data-aos-duration="1500">MAHA</h1>
+                            <h1 class="flex justify-end text-display text-primary font-semibold leading-3xlLH md:hidden" data-aos="fade-left" data-aos-duration="1500">INDRA</h1>
                         </div>
 
                     </div>                        
-                    <p class="hidden xl:block text-base text-paragraph font-normal">Lorem ipsum dolor sit amet consectetur. Enim sit vestibulum adipiscing purus enim nunc id. Nisl amet sed in dolor semper proin.</p>
+                    <p class="hidden xl:block text-base text-paragraph font-normal" data-aos="fade-left" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur. Enim sit vestibulum adipiscing purus enim nunc id. Nisl amet sed in dolor semper proin.</p>
 
-                    <img class="h-[70vh] max-h-[450px] w-full object-cover rounded-xl col-span-3 md:h-[40vh]" src="./src/assets/photos/hero_img.jpg" alt="">
-                    <div class="flex justify-evenly md:grid grid-cols-3 w-full col-span-3">
+                    <img class="h-[70vh] max-h-[450px] w-full object-cover rounded-xl col-span-3 md:h-[40vh]" src="./src/assets/photos/hero_img.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="flex justify-evenly md:grid grid-cols-3 w-full col-span-3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                         <div class="text-base lg:text-xl">
                             <p class="text-sm text-tertiary lg:text-base">Team Leader :</p>
                             <p class="text-paragraph">NI PUTU <br>ANGELINA</p>
@@ -90,39 +72,39 @@
                     </div>
                 </div>
                 <div class="col-span-3  flex flex-col md:grid grid-cols-3 gap-24p md:my-[72px] ">
-                    <h1 class="text-2xl text-tertiary font-medium w-full place-self-center flex flex-col lg:text-display">
-                        <span class="color-change ">Ida Bagus</span> 
-                        <span class="color-change">Maha Indra</span> 
-                        <span class="color-change ">Prasada</span>
+                    <h1 class="text-2xl text-heading font-medium w-full place-self-center flex flex-col lg:text-display">
+                        <span class="color-change " data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">Ida Bagus</span> 
+                        <span class="color-change" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">Maha Indra</span> 
+                        <span class="color-change" data-aos="fade-right" data-aos-duration="1500">Prasada</span>
                     </h1>
-                    <img class=" w-full h-[360px] object-cover rounded-xl md:col-span-2 lg:col-span-1" src="./src/assets/photos/hook_img.jpg" alt="">
-                    <div class="hidden lg:block bg-primary rounded-xl w-full h-full"></div>
+                    <img class=" w-full h-[360px] object-cover rounded-xl md:col-span-2 lg:col-span-1" src="./src/assets/photos/hook_img.jpg" alt="" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="hidden lg:block bg-primary rounded-xl w-full h-full" data-aos="fade-up" data-aos-duration="1500"></div>
                 </div>
 
 
                 <!-- Life Journey -->
                 <div class="flex flex-col md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3 md:my-[72px]">
                     
-                    <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display ">His Life<br> Journey</h1>
-                    <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden">His Life Journey</h1>
+                    <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display " data-aos="fade-right" data-aos-duration="1500">His Life<br> Journey</h1>
+                    <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden"  data-aos="fade-right" data-aos-duration="1500">His Life Journey</h1>
 
                     <div class="flex flex-col gap-24p mt-24p px-24p border-l border-tertiary h-fit col-span-3 lg:col-span-1 lg:mt-0">
-                        <p class="text-sm text-heading font-medium xl:text-xl">Ida Bagus Maha Indra Prasada<br>
+                        <p class="text-sm text-heading font-medium xl:text-xl" data-aos="fade-left" data-aos-duration="1500">Ida Bagus Maha Indra Prasada<br>
                             <span class="text-secondary">was born in </span>Denpasar, Bali</p>
-                        <p class="text-xs text-paragraph font-light xl:text-base">
+                        <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
                                     Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
                         </p>
                     </div>
                     
                     <div class="flex flex-col gap-12p h-full md:h-[267px] md:col-span-3 my-48p lg:col-span-1 lg:my-0 ">
-                        <img class="h-full w-full object-cover rounded-xl lg:max-h-[360px] " src="./src/assets/photos/Ljourner_img.jpg" alt="">                            
-                        <p class="text-base text-paragraph text-right md:text-sm">SD Negeri 12 Denpasar, Bali</p>    
+                        <img class="h-full w-full object-cover rounded-xl lg:max-h-[360px] " src="./src/assets/photos/Ljourner_img.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">                            
+                        <p class="text-base text-paragraph text-right md:text-sm" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">SD Negeri 12 Denpasar, Bali</p>    
                     </div>
                     <div></div>
                     <div class="flex flex-col gap-24p px-24p h-fit col-span-3 border-l border-tertiary lg:border-0 lg:col-span-1">
-                        <p class="text-sm text-heading font-medium xl:text-xl">Ida Bagus Maha Indra Prasada<br>
+                        <p class="text-sm text-heading font-medium xl:text-xl" data-aos="fade-left" data-aos-duration="1500">Ida Bagus Maha Indra Prasada<br>
                             <span class="text-secondary">and his </span>Dream</p>
-                        <p class="text-xs text-paragraph font-light xl:text-base">
+                        <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
                             Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
                         </p>
                     </div>
@@ -133,27 +115,27 @@
             <video class="w-screen " src="./src/assets/videos/mono_b&w.mp4"></video>
             
             <section class="flex flex-col gap-96p px-8 md:px-9 lg:px-[60px] xl:px-[80px]">
-                <div class="flex flex-col md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3">
+                <div class="flex flex-col md:my-[72px] md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3">
                     
-                    <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display ">His Career</h1>
-                    <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden">His Life Journey</h1>
+                    <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display" data-aos="fade-right" data-aos-duration="1500">His Career</h1>
+                    <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden" data-aos="fade-right" data-aos-duration="1500">His Career</h1>
 
                     <div class="flex flex-col gap-24p mt-24p px-24p border-l border-tertiary h-fit col-span-3 lg:col-span-1 lg:mt-0">
-                        <p class="text-sm text-heading font-medium xl:text-xl">Ida Bagus Maha Indra Prasada<br>
+                        <p class="text-sm text-heading font-medium xl:text-xl" data-aos="fade-left" data-aos-duration="1500">Ida Bagus Maha Indra Prasada<br>
                             <span class="text-secondary">was born in </span>Denpasar, Bali</p>
-                        <p class="text-xs text-heading font-medium xl:text-base ">SMK TI Bali Global Denpasar</p>
-                        <p class="text-xs text-paragraph font-light xl:text-base">
+                        <p class="text-xs text-heading font-medium xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">SMK TI Bali Global Denpasar</p>
+                        <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
                                     Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
                         </p>
                     </div>
                     
                     <div class="flex flex-col gap-12p h-full md:h-[267px] md:col-span-3 my-48p lg:col-span-1 lg:my-0 ">
-                        <img class="h-full w-full object-cover rounded-xl lg:max-h-[360px] " src="./src/assets/photos/SMK_TI.jpg" alt="">                            
-                        <p class="text-base text-paragraph text-right md:text-sm">SMK TI Bali Global Denpasar</p>    
+                        <img class="h-full w-full object-cover rounded-xl lg:max-h-[360px] " src="./src/assets/photos/SMK_TI.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">                            
+                        <p class="text-base text-paragraph text-right md:text-sm" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">SMK TI Bali Global Denpasar</p>    
                     </div>
                     <div></div>
                     <div class="flex flex-col gap-24p px-24p h-fit col-span-3 border-l border-tertiary lg:border-0 lg:col-span-1">
-                        <p class="text-xs text-paragraph font-light xl:text-base">
+                        <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
                             Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
                         </p>
                     </div>
@@ -162,26 +144,26 @@
 
                 
 
-                <div class="flex flex-col md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3">
+                <div class="flex flex-col md:my-[72px] md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3">
                     
-                    <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display ">GRED</h1>
-                    <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden">GRED</h1>
+                    <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display " data-aos="fade-right" data-aos-duration="1500">GRED</h1>
+                    <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden" data-aos="fade-right" data-aos-duration="1500">GRED</h1>
 
                     <div class="flex flex-col gap-24p mt-24p px-24p border-l border-tertiary h-fit col-span-3 lg:col-span-1 lg:mt-0">
-                        <p class="text-sm text-heading font-medium xl:text-xl">Ida Bagus Maha Indra Prasada<br>
+                        <p class="text-sm text-heading font-medium xl:text-xl" data-aos="fade-left" data-aos-duration="1500">Ida Bagus Maha Indra Prasada<br>
                             <span class="text-secondary">and his student build </span>GRED</p>
-                        <p class="text-xs text-paragraph font-light xl:text-base">
+                        <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
                                     Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
                         </p>
                     </div>
                     
                     <div class="flex flex-col gap-12p h-full md:h-[267px] md:col-span-3 my-48p lg:col-span-1 lg:my-0 ">
                         <img class="h-full w-full object-cover rounded-xl lg:max-h-[360px] " src="./src/assets/photos/SMK_TI.jpg" alt="">                            
-                        <p class="text-base text-paragraph text-right md:text-sm">GRED</p>    
+                        <p class="text-base text-paragraph text-right md:text-sm" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">GRED</p>    
                     </div>
                     <div></div>
                     <div class="flex flex-col gap-24p px-24p h-fit col-span-3 border-l border-tertiary lg:border-0 lg:col-span-1">
-                        <p class="text-xs text-paragraph font-light xl:text-base">
+                        <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
                             Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
                         </p>
                     </div>
@@ -189,32 +171,32 @@
                 </div>
 
 
-                <div class="flex flex-col md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3 gap-24p">
+                <div class="flex flex-col md:my-[72px] md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3 gap-24p">
                     
-                    <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display ">Conclusion</h1>
-                    <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden">Conclusion</h1>
+                    <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display" data-aos="fade-right" data-aos-duration="1500">Conclusion</h1>
+                    <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden" data-aos="fade-right" data-aos-duration="1500">Conclusion</h1>
 
                     <div class="flex flex-col gap-24p px-24p border-l border-tertiary h-fit col-span-3 lg:col-span-1">
-                        <p class="text-xs text-paragraph font-light xl:text-base">
+                        <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
                             Lorem ipsum dolor sit amet consectetur. Sit porttitor vulputate sollicitudin facilisis eget. Quis mauris nunc sed mattis viverra tristique nisi sit bibendum.
                         </p>
-                        <p class="text-xs text-paragraph font-light xl:text-base">
+                        <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
                             Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
                         </p>
-                        <p class="text-xs text-paragraph font-light xl:text-base">
+                        <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">
                             Lorem ipsum dolor sit amet consectetur. Neque erat rhoncus adipiscing vel. Iaculis aliquam congue sed quisque magnis egestas ultrices a. Diam duis fames est mattis donec. Ut nascetur est faucibus ullamcorper consequat lectus enim. Ipsum libero metus non dignissim lacus. Sapien dictum leo consequat at lacus.
                         </p>
                     </div>
                     
                     <div class="flex flex-col text-base col-span-2 lg:col-span-1">
-                        <button class="flex gap-12p h-fit p-24p border-b border-heading justify-start items-center text-left text-xs lg:text-base lg:p-36p">
+                        <button class="flex gap-12p h-fit p-24p border-b border-heading justify-start items-center text-left text-xs lg:text-base lg:p-36p" data-aos="fade-left" data-aos-duration="1500">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12p">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
                             <p>SMK TI BALI GLOBAL DENPASAR</p>
                         </button>
 
-                        <button class="flex gap-12p h-fit p-24p border-t border-heading justify-start items-center text-left text-xs lg:text-base lg:p-36p">
+                        <button class="flex gap-12p h-fit p-24p border-t border-heading justify-start items-center text-left text-xs lg:text-base lg:p-36p" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12p">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
@@ -224,7 +206,7 @@
                 </div>
             </section>
 
-            <section class="flex flex-col-reverse justify-center gap-48p bg-heading px-8 py-12 text-base text-tertiary md:hidden">
+            <footer class="flex flex-col-reverse justify-center gap-48p bg-heading px-8 py-12 text-base text-tertiary md:hidden">
                 <div class="flex flex-col gap-24p">
                     <div class="flex flex-col gap-12p">
                         <p class="text-sm text-tertiary text-center font-courier">Team Leader :</p>
@@ -251,9 +233,9 @@
                     <p class="text-sm text-tertiary font-medium">Created By :</p>
                     <p class="text-xl text-page font-semibold lg:text-2xl">KELOMPOK 5</p>
                 </div>
-            </section>
+            </footer>
 
-            <section class="hidden md:grid grid-cols-3 bg-heading px-9 py-96p lg:px-[60px] xl:px-[80px]">
+            <footer class="hidden md:grid grid-cols-3 bg-heading px-9 py-96p lg:px-[60px] xl:px-[80px]">
                 <div class="flex flex-col col-span-1">
                     <p class="text-sm text-tertiary font-medium">Created By :</p>
                     <p class="text-xl text-page font-semibold lg:text-2xl">KELOMPOK 5</p>
@@ -273,57 +255,11 @@
                     <p>I Gusti Ngurah Primarta Okan Purena, </p>
                     <p>Putu Yoga Saputra Aryasa</p>
                 </div>
-            </section>                
+            </footer>
+
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                    const words = document.querySelectorAll('.color-change');
-                    let currentIndex = 0;
-                    let intervalId;
-                    let isHovered = false;
-
-                    function changeColor() {
-                        if (!isHovered) {
-                            
-                            words.forEach(word => {
-                                word.classList.remove('color-primary');
-                                word.classList.add('color-tertiary');
-                            });
-
-                            
-                            words[currentIndex].classList.remove('color-tertiary');
-                            words[currentIndex].classList.add('color-primary');
-
-                            
-                            currentIndex = (currentIndex + 1) % words.length;
-                        }
-                    }
-
-                    function startAnimation() {
-                        intervalId = setInterval(changeColor, 2000);
-                    }
-
-                    function stopAnimation() {
-                        clearInterval(intervalId);
-                    }
-
-                    startAnimation();
-
-                    words.forEach((word) => {
-                        word.addEventListener('mouseenter', () => {
-                            stopAnimation();
-                            isHovered = true;
-                            word.classList.remove('color-tertiary');
-                            word.classList.add('color-primary');
-                        });
-
-                        word.addEventListener('mouseleave', () => {
-                            word.classList.remove('color-primary');
-                            word.classList.add('color-tertiary');
-                            isHovered = false;
-                            startAnimation();
-                        });
-                    });
-                });
+                AOS.init();
             </script>
         </body>
 </html>
