@@ -24,28 +24,32 @@
 </head>
         <body class="relative -z-10 cursor-default flex flex-col gap-96p font-outfit bg-page text-primary">
            
-            <div class="fixed right-0 w-[25vw] h-screen bg-page px-24p z-20 border-l border-tertiary tranlate-x-[100%] duration-300 overflow-hidden" id="sidebar">
+            <div class="fixed right-0 w-[25vw] h-screen bg-page px-24p z-20 border-l border-tertiary translate-x-[100%] duration-300 overflow-hidden" id="sidebar">
                 <div class="flex gap-12p items-center text-primary py-5 font-semibold">
-                    <div class="flex justify-end rounded-full w-12p h-12p bg-primary">
+                    <div class="flex justify-end rounded-full w-12p h-12p bg-primary" id="backBtn">
                         <div class="rounded-full w-8p h-8p bg-page"></div>
                     </div>
                     <p>KELOMPOK 5</p>
                 </div>
 
-                <div class="px-24p border-l border-tertiary flex flex-col gap-12p">
-                    <div class="flex gap-12p items-center py-8p border-b border-tertiary">
-                        <svg class="w-12p" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#343a40" d="M256 64A64 64 0 1 0 128 64a64 64 0 1 0 128 0zM152.9 169.3c-23.7-8.4-44.5-24.3-58.8-45.8L74.6 94.2C64.8 79.5 45 75.6 30.2 85.4s-18.7 29.7-8.9 44.4L40.9 159c18.1 27.1 42.8 48.4 71.1 62.4L112 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96 32 0 0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-258.4c29.1-14.2 54.4-36.2 72.7-64.2l18.2-27.9c9.6-14.8 5.4-34.6-9.4-44.3s-34.6-5.5-44.3 9.4L291 122.4c-21.8 33.4-58.9 53.6-98.8 53.6c-12.6 0-24.9-2-36.6-5.8c-.9-.3-1.8-.7-2.7-.9z"/></svg>
-                        <p class="text-sm text-heading font-medium">Life Journey</p>
+                <div class="px-12p border-l border-tertiary flex flex-col gap-12p">
+                    <div class="flex gap-12p items-center py-8p px-12p border-b border-tertiary transition duration-200 ease-in hover:bg-heading hover:text-page">
+                        <svg class="w-12p" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M256 64A64 64 0 1 0 128 64a64 64 0 1 0 128 0zM152.9 169.3c-23.7-8.4-44.5-24.3-58.8-45.8L74.6 94.2C64.8 79.5 45 75.6 30.2 85.4s-18.7 29.7-8.9 44.4L40.9 159c18.1 27.1 42.8 48.4 71.1 62.4L112 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96 32 0 0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-258.4c29.1-14.2 54.4-36.2 72.7-64.2l18.2-27.9c9.6-14.8 5.4-34.6-9.4-44.3s-34.6-5.5-44.3 9.4L291 122.4c-21.8 33.4-58.9 53.6-98.8 53.6c-12.6 0-24.9-2-36.6-5.8c-.9-.3-1.8-.7-2.7-.9z"/></svg>
+                        <p class="text-sm font-medium">Life Journey</p>
                     </div>
-                    <div class="py-8p border-b border-tertiary w-3/5">
-                        <p class="text-sm text-heading">Career</p>
+                    <div class="flex gap-12p items-center py-8p px-12p border-b border-tertiary transition duration-200 ease-in hover:bg-heading hover:text-page">
+                        <svg class="w-12p" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z"/></svg>
+                        <p class="text-sm font-medium">Career</p>
                     </div>
-                    <div class="py-8p border-b border-tertiary w-1/2">
-                        <p class="text-sm text-heading">GRED</p>
+                    <div class="flex gap-12p items-center py-8p px-12p border-b border-tertiary transition duration-200 ease-in hover:bg-heading hover:text-page">
+                        <svg class="w-12p" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M320 0c17.7 0 32 14.3 32 32l0 64 120 0c39.8 0 72 32.2 72 72l0 272c0 39.8-32.2 72-72 72l-304 0c-39.8 0-72-32.2-72-72l0-272c0-39.8 32.2-72 72-72l120 0 0-64c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224l16 0 0 192-16 0c-26.5 0-48-21.5-48-48l0-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-16 0 0-192 16 0z"/></svg>                        
+                        <p class="text-sm font-medium">GRED</p>
                     </div>
-                    <div class="py-8p border-b border-tertiary">
-                        <p class="text-sm text-heading">Conclusion</p>
+                    <div class="flex gap-12p items-center py-8p px-12p border-b border-tertiary transition duration-200 ease-in hover:bg-heading hover:text-page">
+                        <svg class="w-12p" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l224 0 0-112c0-26.5 21.5-48 48-48l112 0 0-224c0-35.3-28.7-64-64-64L64 32zM448 352l-45.3 0L336 352c-8.8 0-16 7.2-16 16l0 66.7 0 45.3 32-32 64-64 32-32z"/></svg>                        
+                        <p class="text-sm font-medium">Conclusion</p>
                     </div>
+                    
                 </div>
             </div >
 
@@ -310,12 +314,17 @@
 
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
+                let darkOverlay = document.querySelector("#darkOverlay")
+                let sidebar = document.querySelector("#sidebar")
+
                 let toggleBtn = document.querySelector("#menuToggleBtn").addEventListener('click', ()=>{
-                    let sidebar = document.querySelector("#sidebar");
                     sidebar.classList.toggle("translate-x-[100%]")
-                    
-                    let darkOverlay = document.querySelector("#darkOverlay")
-                    darkOverlay.style.display ="block"    
+                    darkOverlay.style.display ="hidden"
+                })
+
+                let backBtn = document.querySelector("#backBtn").addEventListener('click', ()=>{
+                    sidebar.classList.toggle("translate-x-[100%]")
+                    darkOverlay.style.display ="hidden"
                 })
                 AOS.init();
             </script>
