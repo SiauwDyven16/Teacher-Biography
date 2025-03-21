@@ -24,42 +24,46 @@
 </head>
         <body class="relative -z-10 cursor-default flex flex-col gap-96p font-outfit bg-page text-primary">
            
-            <div class="fixed right-0 w-[25vw] h-screen bg-page px-24p z-20 border-l border-tertiary translate-x-[100%] duration-300 overflow-hidden" id="sidebar">
+            <div class="fixed right-0  h-screen bg-page px-24p z-20 border-l border-tertiary translate-x-[100%] duration-300 overflow-hidden w-screen md:w-[35vw] lg:w-[25vw]" id="sidebar">
                 <div class="flex gap-12p items-center text-primary py-5 font-semibold">
-                    <div class="flex justify-end rounded-full w-12p h-12p bg-primary" id="backBtn">
-                        <div class="rounded-full w-8p h-8p bg-page"></div>
+                    <div class="flex justify-end rounded-full w-12p h-12p lg:w-24p lg:h-24p bg-primary cursor-pointer" id="backBtn">
+                        <div class="rounded-full w-8p h-8p lg:w-12p lg:h-12p bg-page"></div>
                     </div>
-                    <p>KELOMPOK 5</p>
+                    <p onclick="scrollToSection('home')" class="text-base lg:text-xl">KELOMPOK 5</p>
                 </div>
 
-                <div class="px-12p border-l border-tertiary flex flex-col gap-12p">
-                    <div class="flex gap-12p items-center py-8p px-12p border-b border-tertiary transition duration-200 ease-in hover:bg-heading hover:text-page">
+                <div class=" borderl border-tertiary flex flex-col gap-12p">
+                    <button onclick="scrollToSection('lifeJ')" class="flex gap-12p items-center py-8p px-24p border-b border-tertiary w-full transition duration-200 ease-in hover:bg-heading hover:text-page">
                         <svg class="w-12p" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M256 64A64 64 0 1 0 128 64a64 64 0 1 0 128 0zM152.9 169.3c-23.7-8.4-44.5-24.3-58.8-45.8L74.6 94.2C64.8 79.5 45 75.6 30.2 85.4s-18.7 29.7-8.9 44.4L40.9 159c18.1 27.1 42.8 48.4 71.1 62.4L112 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96 32 0 0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-258.4c29.1-14.2 54.4-36.2 72.7-64.2l18.2-27.9c9.6-14.8 5.4-34.6-9.4-44.3s-34.6-5.5-44.3 9.4L291 122.4c-21.8 33.4-58.9 53.6-98.8 53.6c-12.6 0-24.9-2-36.6-5.8c-.9-.3-1.8-.7-2.7-.9z"/></svg>
-                        <p class="text-sm font-medium">Life Journey</p>
-                    </div>
-                    <div class="flex gap-12p items-center py-8p px-12p border-b border-tertiary transition duration-200 ease-in hover:bg-heading hover:text-page">
+                        <p class="text-xs font-medium lg:text-base">Life Journey</p>
+                    </button>
+                    <button onclick="scrollToSection('career')" class="flex gap-12p items-center py-8p px-24p border-b border-tertiary w-full transition duration-200 ease-in hover:bg-heading hover:text-page">
                         <svg class="w-12p" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z"/></svg>
-                        <p class="text-sm font-medium">Career</p>
-                    </div>
-                    <div class="flex gap-12p items-center py-8p px-12p border-b border-tertiary transition duration-200 ease-in hover:bg-heading hover:text-page">
+                        <p class="text-xs font-medium lg:text-base">Career</p>
+                    </button>
+                    <button onclick="scrollToSection('gred')" class="flex gap-12p items-center py-8p px-24p border-b border-tertiary w-full transition duration-200 ease-in hover:bg-heading hover:text-page">
                         <svg class="w-12p" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M320 0c17.7 0 32 14.3 32 32l0 64 120 0c39.8 0 72 32.2 72 72l0 272c0 39.8-32.2 72-72 72l-304 0c-39.8 0-72-32.2-72-72l0-272c0-39.8 32.2-72 72-72l120 0 0-64c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224l16 0 0 192-16 0c-26.5 0-48-21.5-48-48l0-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-16 0 0-192 16 0z"/></svg>                        
-                        <p class="text-sm font-medium">GRED</p>
-                    </div>
-                    <div class="flex gap-12p items-center py-8p px-12p border-b border-tertiary transition duration-200 ease-in hover:bg-heading hover:text-page">
+                        <p class="text-xs font-medium lg:text-base">GRED</p>
+                    </button>
+                    <button onclick="scrollToSection('conclusion')" class="flex gap-12p items-center py-8p px-24p border-b border-tertiary w-full transition duration-200 ease-in hover:bg-heading hover:text-page">
                         <svg class="w-12p" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l224 0 0-112c0-26.5 21.5-48 48-48l112 0 0-224c0-35.3-28.7-64-64-64L64 32zM448 352l-45.3 0L336 352c-8.8 0-16 7.2-16 16l0 66.7 0 45.3 32-32 64-64 32-32z"/></svg>                        
-                        <p class="text-sm font-medium">Conclusion</p>
-                    </div>
+                        <p class="text-xs font-medium lg:text-base">Conclusion</p>
+                    </button>
+                    <button onclick="scrollToSection('footer')" class="flex gap-12p items-center py-8p px-24p border-b border-tertiary w-full transition duration-200 ease-in hover:bg-heading hover:text-page">
+                        <svg class="w-12p" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg>
+                        <p class="text-xs font-medium lg:text-base">About Us</p>
+                    </button>
                     
                 </div>
             </div >
 
-            <div class="hidden fixed top-0 left-0 bg-primary w-screen h-screen z-10 opacity-20" id="darkOverlay"></div>
+            <div class="hidden fixed top-0 left-0 bg-primary w-screen h-screen z-10 opacity-0" id="darkOverlay"></div>
 
-            <section class="relative flex flex-col gap-24p px-8 md:px-9 lg:px-[60px] xl:px-[80px]">
-                <nav class="col-span-3  flex justify-between items-center border-b border-tertiary py-4">
+            <section id="home" class="relative flex flex-col gap-24p px-8 md:px-9 lg:px-[60px] xl:px-[80px]">
+                <nav class="col-span-3  flex justify-between items-center border-b border-tertiary py-4 ">
                     <p class="font-medium text-sm md:text-lg">Maha Indra</p>
 
-                    <div class="flex flex-col gap-12p items-end cursor-pointer" id="menuToggleBtn">
+                    <div class="fixed flex flex-col gap-12p items-end cursor-pointer right-8 md:right-0 lg:right-[60px] xl:right-[80px] z-10" id="menuToggleBtn">
                         <div class="h-[2px] bg-primary w-24p    md:w-48p"></div>
                         <div class="h-[2px] bg-tertiary w-12p    md:w-24p"></div>
                     </div>
@@ -76,7 +80,7 @@
                     </div>                        
                     <p class="hidden xl:block text-base text-paragraph font-normal" data-aos="fade-left" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur. Enim sit vestibulum adipiscing purus enim nunc id. Nisl amet sed in dolor semper proin.</p>
 
-                    <img class="h-[70vh] max-h-[450px] w-full object-cover rounded-xl col-span-3 md:h-[40vh]" src="./src/assets/photos/hero_img.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">
+                    <img class="h-[70vh] max-h-[450px] w-full object-cover rounded-xl col-span-3 md:h-[40vh]" src="./src/assets/photos/hero_img.png" alt="" data-aos="fade-up" data-aos-duration="1500">
                     <div class="flex justify-evenly md:grid grid-cols-3 w-full col-span-3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                         <div class="text-base lg:text-xl">
                             <p class="text-sm text-tertiary lg:text-base">Team Leader :</p>
@@ -88,23 +92,26 @@
                         </div>
                         <div class="hidden lg:flex flex-col col-span-1 gap-12p">
                             <p class="text-sm text-tertiary xl:text-base">Maha set his life now on :</p>
+
                             <div class="flex gap-24p overflow-scroll lg:flex-row-reverse min-w-fit">
-                                <button class="flex text-base gap-12p min-w-fit items-center rounded-full border border-secondary pl-24p pr-[54px] py-8p transition duration-200 ease-in hover:bg-heading hover:text-page">
+                                <a  href="https://smkti-baliglobal.sch.id/" class="flex text-base gap-12p min-w-fit items-center rounded-full border border-secondary pl-24p pr-[54px] py-8p transition duration-200 ease-in hover:bg-heading hover:text-page">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-18p">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                     </svg>
                                     <p class=''>
                                         SMK TI BALI GLOBAL DENPASAR
                                     </p>
-                                </button>
-                                <button class="flex text-base gap-12p min-w-fit items-center rounded-full border border-secondary pl-24p pr-[54px] py-8p transition duration-200 ease-in hover:bg-heading hover:text-page">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-18p">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                                    </svg>
-                                    <p class=''>
-                                        ITB STIKOM BALI
-                                    </p>
-                                </button>
+                                </a>
+                                                                    
+                                    <a href="https://stikom-bali.ac.id/" class="flex text-base gap-12p min-w-fit items-center rounded-full border border-secondary pl-24p pr-[54px] py-8p transition duration-200 ease-in hover:bg-heading hover:text-page">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-18p">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                        </svg>
+                                        <p class=''>
+                                            ITB STIKOM BALI
+                                        </p>
+                                    </a>
+                                
                             </div>
                             <div class="w-full bg-tertiary h-[1px] mt-12p"></div>
                         </div>    
@@ -138,21 +145,19 @@
 
 
                 <!-- Life Journey -->
-                <div class="flex flex-col md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3 md:my-[72px]">
+                <div id="lifeJ" class="flex flex-col md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3 md:my-[72px]">
                     
                     <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display " data-aos="fade-right" data-aos-duration="1500">His Life<br> Journey</h1>
                     <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden"  data-aos="fade-right" data-aos-duration="1500">His Life Journey</h1>
 
                     <div class="flex flex-col gap-24p mt-24p px-24p border-l border-tertiary h-fit col-span-3 lg:col-span-1 lg:mt-0">
                         <p class="text-sm text-heading font-medium xl:text-xl" data-aos="fade-left" data-aos-duration="1500">Ida Bagus Maha Indra Prasada<br>
-                            <span class="text-secondary">was born in </span>Denpasar, Bali</p>
+                            <span class="text-secondary">was born in </span>Tabanan, Bali</p>
                         <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
-                                    Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
-                        </p>
-                    </div>
+                            Ida Bagus Maha Indra Prasada lahir pada 27 Januari 1999 di sebuah desa kecil bernama Sandang Dauh Yeh, di Tabanan, Bali. Sejak kecil, ia sudah menunjukkan rasa ingin tahu yang besar terhadap teknologi. <br><br>Perjalanannya dimulai di SD Negeri 9 Pedungan, berlanjut ke SMP Tunas Harapan Jaya, hingga akhirnya mendalami jurusan Rekayasa Perangkat Lunak (RPL) di SMK Negeri 2 Tabanan. <br><br>Ketertarikannya pada dunia robotika semakin tumbuh saat ia melanjutkan pendidikan di ITB Stikom Bali, mengambil jurusan Ilmu Komputer dengan konsentrasi robotika.                    </div>
                     
                     <div class="flex flex-col gap-12p h-full md:h-[267px] md:col-span-3 my-48p lg:col-span-1 lg:my-0 ">
-                        <img class="h-full w-full object-cover rounded-xl lg:max-h-[360px] " src="./src/assets/photos/Ljourner_img.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">                            
+                        <img class="h-full w-full object-cover rounded-xl lg:max-h-[360px] " src="./src/assets/photos/sdn_9_pedungan.png" alt="" data-aos="fade-up" data-aos-duration="1500">                            
                         <p class="text-base text-paragraph text-right md:text-sm" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">SD Negeri 12 Denpasar, Bali</p>    
                     </div>
                     <div></div>
@@ -160,46 +165,37 @@
                         <p class="text-sm text-heading font-medium xl:text-xl" data-aos="fade-left" data-aos-duration="1500">Ida Bagus Maha Indra Prasada<br>
                             <span class="text-secondary">and his </span>Dream</p>
                         <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
-                            Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
-                        </p>
+                            Maha Indra selalu memimpikan hal besar. Beliau ingin membawa tim robotika binaannya melangkah ke ajang internasional. Tak hanya itu, ia juga bertekad menjadi coach dan guru yang sukses, membimbing murid-muridnya meraih potensi terbaik mereka. Impian inilah yang menjadi bahan bakar semangatnya setiap hari.                        </p>
                     </div>
                     <div></div>
                 </div>
             </section>
 
-            <video class="w-screen " src="./src/assets/videos/mono_b&w.mp4"></video>
+            <img class="w-screen " src="./src/assets/photos/screen.png"></img>
             
             <section class="flex flex-col gap-96p px-8 md:px-9 lg:px-[60px] xl:px-[80px]">
-                <div class="flex flex-col md:my-[72px] md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3">
+                <div id="career" class="flex flex-col md:my-[72px] md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3">
                     
                     <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display" data-aos="fade-right" data-aos-duration="1500">His Career</h1>
                     <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden" data-aos="fade-right" data-aos-duration="1500">His Career</h1>
 
                     <div class="flex flex-col gap-24p mt-24p px-24p border-l border-tertiary h-fit col-span-3 lg:col-span-1 lg:mt-0">
                         <p class="text-sm text-heading font-medium xl:text-xl" data-aos="fade-left" data-aos-duration="1500">Ida Bagus Maha Indra Prasada<br>
-                            <span class="text-secondary">was born in </span>Denpasar, Bali</p>
+                            <span class="text-secondary">and his </span>Career</p>
                         <p class="text-xs text-heading font-medium xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">SMK TI Bali Global Denpasar</p>
                         <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
-                                    Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
-                        </p>
+                            Sebelum menjadi guru, Ida Bagus Maha Indra Prasada mengawali karir profesionalnya sebagai teknisi di Bali Yoni Komputer, sebuah service center ponsel ternama, di mana ia bekerja selama 8 bulan. <br><br>Pengalamannya di sana mengasah keterampilannya dalam menganalisis dan memperbaiki perangkat teknologi. Selain itu, ia juga pernah menjalani magang di Dinas Pendidikan, Kepemudaan, dan Olahraga Provinsi Bali,                        </p>
                     </div>
                     
                     <div class="flex flex-col gap-12p h-full md:h-[267px] md:col-span-3 my-48p lg:col-span-1 lg:my-0 ">
-                        <img class="h-full w-full object-cover rounded-xl lg:max-h-[360px] " src="./src/assets/photos/SMK_TI.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">                            
+                        <img class="h-full w-full object-cover rounded-xl lg:max-h-[360px] " src="./src/assets/photos/SMK_TI.png" alt="" data-aos="fade-up" data-aos-duration="1500">                            
                         <p class="text-base text-paragraph text-right md:text-sm" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">SMK TI Bali Global Denpasar</p>    
                     </div>
-                    <div></div>
-                    <div class="flex flex-col gap-24p px-24p h-fit col-span-3 border-l border-tertiary lg:border-0 lg:col-span-1">
-                        <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
-                            Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
-                        </p>
-                    </div>
-                    <div></div>
                 </div>
 
                 
 
-                <div class="flex flex-col md:my-[72px] md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3">
+                <div id="gred" class="flex flex-col md:my-[72px] md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3">
                     
                     <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display " data-aos="fade-right" data-aos-duration="1500">GRED</h1>
                     <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden" data-aos="fade-right" data-aos-duration="1500">GRED</h1>
@@ -208,55 +204,49 @@
                         <p class="text-sm text-heading font-medium xl:text-xl" data-aos="fade-left" data-aos-duration="1500">Ida Bagus Maha Indra Prasada<br>
                             <span class="text-secondary">and his student build </span>GRED</p>
                         <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
-                                    Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
-                        </p>
+                            Bersama kepala sekolah, yayasan, dan didorong oleh semangat serta ide-idenya, ia dan anak muridnya <span class="italic">Elika Putri Wicaksana</span> menjadi inisiator utama berdirinya komunitas <span class="font-medium italic">GRED</span> pada 6 Mei 2023.<br><br>GRED hadir dengan misi memajukan sekolah dalam bidang robotika, membuka jalan bagi siswa untuk menorehkan prestasi di berbagai kompetisi.</p>
                     </div>
                     
                     <div class="flex flex-col gap-12p h-full md:h-[267px] md:col-span-3 my-48p lg:col-span-1 lg:my-0 ">
-                        <img class="h-full w-full object-cover rounded-xl lg:max-h-[360px] " src="./src/assets/photos/SMK_TI.jpg" alt="">                            
+                        <img class="h-full w-full object-cover rounded-xl lg:max-h-[360px] " src="./src/assets/photos/GRED.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">                            
                         <p class="text-base text-paragraph text-right md:text-sm" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">GRED</p>    
                     </div>
                     <div></div>
                     <div class="flex flex-col gap-24p px-24p h-fit col-span-3 border-l border-tertiary lg:border-0 lg:col-span-1">
                         <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
-                            Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
-                        </p>
+                            Di bawah bimbingannya, tim ini meraih pencapaian gemilang di ajang seperti <span class="font-medium italic">Elco UNUD, PNBRc, Rotacsion, PNBITC, Radeon, KSK, Infinity Stikom, Digred, Elcom Jogja, UMNINOS, ITS Surabaya,</span> hingga kompetisi di Semarang.                        </p>
                     </div>
                     <div></div>
                 </div>
 
 
-                <div class="flex flex-col md:my-[72px] md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3 gap-24p">
+                <div id="conclusion" class="flex flex-col md:my-[72px] md:grid grid-cols-3 md:gap-x-24p md:gap-y-24p col-span-3 gap-24p">
                     
                     <h1 class="hidden h-fit lg:block text-2xl font-medium w-full xl:text-display" data-aos="fade-right" data-aos-duration="1500">Conclusion</h1>
                     <h1 class="text-2xl font-medium w-full h-fit col-span-2 lg:hidden" data-aos="fade-right" data-aos-duration="1500">Conclusion</h1>
 
                     <div class="flex flex-col gap-24p px-24p border-l border-tertiary h-fit col-span-3 lg:col-span-1">
                         <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
-                            Lorem ipsum dolor sit amet consectetur. Sit porttitor vulputate sollicitudin facilisis eget. Quis mauris nunc sed mattis viverra tristique nisi sit bibendum.
-                        </p>
+                            bagi banyak murid, Maha Indra bukan sekadar guru, ia adalah panutan, inspirasi, dan pembuka jalan menuju masa depan yang lebih cerah.<br> Beliau adalah pemandu yang tak hanya mengajarkan ilmu, tetapi juga keberanian untuk mencoba, kegigihan untuk bangkit, dan kepercayaan diri untuk melangkah maju.                        </p>
                         <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
-                            Lorem ipsum dolor sit amet consectetur. Nunc sit magna lorem mauris quis massa risus consectetur urna. Id gravida sit tempor penatibus eget luctus in. Viverra nunc nisl elementum sed. Sit ut nec ultrices nisl ullamcorper bibendum sit dolor. 
-                        </p>
+                            Moto hidupnya, <span class="font-medium italic">"Jalanin aja dulu"</span>, mencerminkan sikapnya yang penuh keberanian dan optimisme. Baginya, setiap langkah kecil yang diambil adalah bagian dari perjalanan besar menuju kesuksesan, dan ia mengajarkan murid-muridnya untuk tidak takut mencoba, meski jalan di depan belum sepenuhnya terang.                         </p>
                         <p class="text-xs text-paragraph font-light xl:text-base" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">
-                            Lorem ipsum dolor sit amet consectetur. Neque erat rhoncus adipiscing vel. Iaculis aliquam congue sed quisque magnis egestas ultrices a. Diam duis fames est mattis donec. Ut nascetur est faucibus ullamcorper consequat lectus enim. Ipsum libero metus non dignissim lacus. Sapien dictum leo consequat at lacus.
-                        </p>
+                            Perjalanan  <span class="font-medium italic">Maha Indra</span> adalah bukti bahwa seorang guru bukan hanya mendidik, tetapi juga menyalakan cahaya yang menerangi jalan bagi generasi penerus bangsa.                        </p>
                     </div>
                     
                     <div class="flex flex-col text-base col-span-2 lg:col-span-1">
-                        <button class="flex gap-12p h-fit p-24p border-b border-primary justify-start items-center text-left text-xs lg:text-base lg:p-36p transition duration-200 ease-in hover:bg-primary hover:text-page">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12p">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg>
-                            <p>SMK TI BALI GLOBAL DENPASAR</p>
-                        </button>
-
-                        <button class="flex gap-12p h-fit p-24p justify-start items-center text-left text-xs lg:text-base lg:p-36p transition duration-200 ease-in hover:bg-primary hover:text-page">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12p">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg>
-                            <p>GRED</p>
-                        </button>
+                            <a href="https://smkti-baliglobal.sch.id/" class="flex gap-12p h-fit p-24p border-b border-primary justify-start items-center text-left text-xs lg:text-base lg:p-36p transition duration-200 ease-in hover:bg-primary hover:text-page">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12p">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                                <p>SMK TI BALI GLOBAL DENPASAR</p>
+                            </a>
+                            <a href="https://www.instagram.com/gred.globaliti/" class="flex gap-12p h-fit p-24p justify-start items-center text-left text-xs lg:text-base lg:p-36p transition duration-200 ease-in hover:bg-primary hover:text-page">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12p">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                                <p>GRED</p>
+                            </a>
                     </div>
                 </div>
             </section>
@@ -265,22 +255,25 @@
                 <div class="flex flex-col gap-24p">
                     <div class="flex flex-col gap-12p">
                         <p class="text-sm text-tertiary text-center font-courier">Team Leader :</p>
-                        <p class="text-center">Ni Putu Angel Shinta Dewi</p>
+                        <p class="text-center">Ni Putu Angel Shinta Dewi <span class="opacity-40">(28)</p>
                     </div>
                     <div class="flex flex-col gap-12p">
                         <p class="text-sm text-tertiary text-center font-courier">UI Desginer :</p>
-                        <p class="text-center">Dyven Siauw</p>
+                        <p class="text-center">Dyven Siauw <span class="opacity-40">(6)</p>
                     </div>
                     <div class="flex flex-col gap-12p">
                         <p class="text-sm text-tertiary text-center font-courier">Front End Developer :</p>
-                        <p class="text-center">Dyven Siauw</p>
+                        <p class="text-center">Dyven Siauw <span class="opacity-40">(6)</p>
                     </div>
                     <div class="flex flex-col gap-12p">
                         <p class="text-sm text-tertiary text-center font-courier">Information Researcher :</p>
-                        <p class="text-center">A.A Agung Ngurah Agung <br>Pramaditya Dharma Wibawa,</p>
-                        <p class="text-center">Alif Jason Schmied,</p>
-                        <p class="text-center">I Gusti Ngurah Primarta Okan Purena, </p>
-                        <p class="text-center">Putu Yoga Saputra Aryasa</p>
+                        <p class="text-center">I Gusti Ngurah Primarta Okan Purena <span class="opacity-40">(13) </p>
+                    </div>
+                    <div class="flex flex-col gap-12p">
+                        <p class="text-sm text-tertiary text-center font-courier">Assistant :</p>
+                        <p class="text-center">A.A Agung Ngurah Agung <br>Pramaditya Dharma Wibawa <span class="opacity-40">(1),</p>
+                        <p class="text-center">Alif Jason Schmied <span class="opacity-40">(3),</p>
+                        <p class="text-center">Putu Yoga Saputra Aryasa (<span class="opacity-40">29)</p>
                     </div>
                 </div>
 
@@ -290,7 +283,7 @@
                 </div>
             </footer>
 
-            <footer class="hidden md:grid grid-cols-3 bg-heading px-9 py-96p lg:px-[60px] xl:px-[80px]">
+            <footer id="footer" class="hidden md:grid grid-cols-3 bg-heading px-9 py-96p lg:px-[60px] xl:px-[80px]">
                 <div class="flex flex-col col-span-1">
                     <p class="text-sm text-tertiary font-medium">Created By :</p>
                     <p class="text-xl text-page font-semibold lg:text-2xl">KELOMPOK 5</p>
@@ -300,29 +293,42 @@
                     <p>Front End Developer</p>
                     <p>UI Designer</p>
                     <p>Information Researcher</p>
+                    <p>Assistant</p>
                 </div>
                 <div class="flex flex-col gap-12p col-span-1 text-xs lg:text-sm xl:text-base text-tertiary">
-                    <p>Ni Putu Angel Shinta Dewi</p>
-                    <p>Dyven Siauw </p>
-                    <p>Dyven Siauw </p>
-                    <p>A.A Agung Ngurah Agung Pramaditya Dharma Wibawa,</p>
-                    <p>Alif Jason Schmied,</p>
-                    <p>I Gusti Ngurah Primarta Okan Purena, </p>
-                    <p>Putu Yoga Saputra Aryasa</p>
+                    <p>Ni Putu Angel Shinta Dewi <span class="opacity-40">(28)</p>
+                    <p>Dyven Siauw <span class="opacity-40">(6)</p>
+                    <p>Dyven Siauw <span class="opacity-40">(6)</p>
+                    <p>I Gusti Ngurah Primarta Okan Purena <span class="opacity-40">(13), </p>
+                    <p>A.A Agung Ngurah Agung <br>Pramaditya Dharma Wibawa <span class="opacity-40">(1),</p>
+                    <p>Alif Jason Schmied <span class="opacity-40">(3),</p>
+                    <p>Putu Yoga Saputra Aryasa <span class="opacity-40">(29)</p>
                 </div>
             </footer>
 
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script>
+            <script>                
                 let darkOverlay = document.querySelector("#darkOverlay")
                 let sidebar = document.querySelector("#sidebar")
 
+
+                function scrollToSection(sectionId, offset = 100) {
+                    const section = document.getElementById(sectionId);
+                    const y = section.getBoundingClientRect().top + window.scrollY - offset;
+                    sidebar.classList.toggle("translate-x-[100%]")
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                }
                 let toggleBtn = document.querySelector("#menuToggleBtn").addEventListener('click', ()=>{
                     sidebar.classList.toggle("translate-x-[100%]")
-                    darkOverlay.style.display ="hidden"
+                    darkOverlay.style.display ="block"
                 })
 
                 let backBtn = document.querySelector("#backBtn").addEventListener('click', ()=>{
+                    sidebar.classList.toggle("translate-x-[100%]")
+                    darkOverlay.style.display ="hidden"
+                })
+                
+                darkOverlay.addEventListener('click',()=>{
                     sidebar.classList.toggle("translate-x-[100%]")
                     darkOverlay.style.display ="hidden"
                 })

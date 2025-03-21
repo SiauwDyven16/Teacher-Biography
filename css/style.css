@@ -1795,6 +1795,10 @@ html:has(.drawer-toggle:checked) {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .-left-\[40px\] {
   left: -40px;
 }
@@ -1827,6 +1831,14 @@ html:has(.drawer-toggle:checked) {
   top: 0px;
 }
 
+.right-\[32px\] {
+  right: 32px;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1841,6 +1853,10 @@ html:has(.drawer-toggle:checked) {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .col-span-1 {
@@ -2024,6 +2040,18 @@ html:has(.drawer-toggle:checked) {
   width: 12rem;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[50vw\] {
+  width: 50vw;
+}
+
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -2055,6 +2083,25 @@ html:has(.drawer-toggle:checked) {
 
 .translate-x-0 {
   --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[0\] {
+  --tw-translate-x: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[0\%\] {
+  --tw-translate-x: 0%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[\=-\] {
+  --tw-translate-x: =-;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2382,6 +2429,14 @@ html:has(.drawer-toggle:checked) {
   font-weight: 600;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .leading-3xlLH {
   line-height: 52.4px;
 }
@@ -2445,6 +2500,14 @@ html:has(.drawer-toggle:checked) {
   opacity: 0.1;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -2463,6 +2526,10 @@ html:has(.drawer-toggle:checked) {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
 }
 
 .ease-out {
@@ -2489,6 +2556,14 @@ html:has(.drawer-toggle:checked) {
 }
 
 @media (min-width: 768px) {
+  .md\:right-\[\] {
+    right: ;
+  }
+
+  .md\:right-0 {
+    right: 0px;
+  }
+
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -2530,6 +2605,22 @@ html:has(.drawer-toggle:checked) {
     width: 3rem;
   }
 
+  .md\:w-\[50vw\] {
+    width: 50vw;
+  }
+
+  .md\:w-\[30\] {
+    width: 30;
+  }
+
+  .md\:w-\[30vw\] {
+    width: 30vw;
+  }
+
+  .md\:w-\[35vw\] {
+    width: 35vw;
+  }
+
   .md\:gap-x-24p {
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
@@ -2554,6 +2645,14 @@ html:has(.drawer-toggle:checked) {
 }
 
 @media (min-width: 1024px) {
+  .lg\:right-0 {
+    right: 0px;
+  }
+
+  .lg\:right-\[60px\] {
+    right: 60px;
+  }
+
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -2579,8 +2678,32 @@ html:has(.drawer-toggle:checked) {
     display: none;
   }
 
+  .lg\:h-12p {
+    height: 0.75rem;
+  }
+
+  .lg\:h-24p {
+    height: 1.5rem;
+  }
+
   .lg\:max-h-\[360px\] {
     max-height: 360px;
+  }
+
+  .lg\:w-\[40vw\] {
+    width: 40vw;
+  }
+
+  .lg\:w-\[25vw\] {
+    width: 25vw;
+  }
+
+  .lg\:w-12p {
+    width: 0.75rem;
+  }
+
+  .lg\:w-24p {
+    width: 1.5rem;
   }
 
   .lg\:flex-row-reverse {
@@ -2627,12 +2750,28 @@ html:has(.drawer-toggle:checked) {
 }
 
 @media (min-width: 1440px) {
+  .xl\:right-\[80px\] {
+    right: 80px;
+  }
+
   .xl\:col-span-2 {
     grid-column: span 2 / span 2;
   }
 
   .xl\:block {
     display: block;
+  }
+
+  .xl\:w-\[\] {
+    width: ;
+  }
+
+  .xl\:w-\[25\] {
+    width: 25;
+  }
+
+  .xl\:w-\[25vw\] {
+    width: 25vw;
   }
 
   .xl\:px-\[80px\] {
