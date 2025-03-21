@@ -12,20 +12,55 @@
     <style>
         * {
             scrollbar-width: none;
+            box-sizing: border-box;
         }
-    </style>    
+    
+        html, body {
+            margin: 0;
+            overflow-x: hidden;
+            width: 100%;
+        }
+    </style> 
 </head>
-        <body class="cursor-default flex flex-col gap-96p font-outfit bg-page text-primary">
+        <body class="relative -z-10 cursor-default flex flex-col gap-96p font-outfit bg-page text-primary">
+           
+            <div class="fixed right-0 w-[25vw] h-screen bg-page px-24p z-20 border-l border-tertiary tranlate-x-[100%] duration-300 overflow-hidden" id="sidebar">
+                <div class="flex gap-12p items-center text-primary py-5 font-semibold">
+                    <div class="flex justify-end rounded-full w-12p h-12p bg-primary">
+                        <div class="rounded-full w-8p h-8p bg-page"></div>
+                    </div>
+                    <p>KELOMPOK 5</p>
+                </div>
 
-            <section class="flex flex-col gap-24p px-8 md:px-9 lg:px-[60px] xl:px-[80px]">
+                <div class="px-24p border-l border-tertiary flex flex-col gap-12p">
+                    <div class="flex gap-12p items-center py-8p border-b border-tertiary">
+                        <svg class="w-12p" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#343a40" d="M256 64A64 64 0 1 0 128 64a64 64 0 1 0 128 0zM152.9 169.3c-23.7-8.4-44.5-24.3-58.8-45.8L74.6 94.2C64.8 79.5 45 75.6 30.2 85.4s-18.7 29.7-8.9 44.4L40.9 159c18.1 27.1 42.8 48.4 71.1 62.4L112 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96 32 0 0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-258.4c29.1-14.2 54.4-36.2 72.7-64.2l18.2-27.9c9.6-14.8 5.4-34.6-9.4-44.3s-34.6-5.5-44.3 9.4L291 122.4c-21.8 33.4-58.9 53.6-98.8 53.6c-12.6 0-24.9-2-36.6-5.8c-.9-.3-1.8-.7-2.7-.9z"/></svg>
+                        <p class="text-sm text-heading font-medium">Life Journey</p>
+                    </div>
+                    <div class="py-8p border-b border-tertiary w-3/5">
+                        <p class="text-sm text-heading">Career</p>
+                    </div>
+                    <div class="py-8p border-b border-tertiary w-1/2">
+                        <p class="text-sm text-heading">GRED</p>
+                    </div>
+                    <div class="py-8p border-b border-tertiary">
+                        <p class="text-sm text-heading">Conclusion</p>
+                    </div>
+                </div>
+            </div >
+
+            <div class="hidden fixed top-0 left-0 bg-primary w-screen h-screen z-10 opacity-20" id="darkOverlay"></div>
+
+            <section class="relative flex flex-col gap-24p px-8 md:px-9 lg:px-[60px] xl:px-[80px]">
                 <nav class="col-span-3  flex justify-between items-center border-b border-tertiary py-4">
                     <p class="font-medium text-sm md:text-lg">Maha Indra</p>
-                    <div class="flex flex-col gap-12p items-end">
+
+                    <div class="flex flex-col gap-12p items-end cursor-pointer" id="menuToggleBtn">
                         <div class="h-[2px] bg-primary w-24p    md:w-48p"></div>
                         <div class="h-[2px] bg-tertiary w-12p    md:w-24p"></div>
                     </div>
                 </nav>
-                <div class="col-span-3  flex flex-col gap-24p md:grid grid-cols-3">
+                <div class="relative col-span-3  flex flex-col gap-24p md:grid grid-cols-3">
                     <div class="flex flex-col gap-24p md:col-span-3 xl:col-span-2">
                         <h1 class="hidden md:block text-display text-tertiary font-semibold leading-3xlLH" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">WHO IS</h1>
                         <h1 class="hidden md:block text-display text-primary font-semibold leading-3xlLH" data-aos="fade-right" data-aos-duration="1500">GUS MAHA INDRA <span class="text-tertiary">?<span></h1>
@@ -50,7 +85,7 @@
                         <div class="hidden lg:flex flex-col col-span-1 gap-12p">
                             <p class="text-sm text-tertiary xl:text-base">Maha set his life now on :</p>
                             <div class="flex gap-24p overflow-scroll lg:flex-row-reverse min-w-fit">
-                                <button class="flex text-base gap-12p min-w-fit items-center rounded-full border border-secondary pl-24p pr-[54px] py-8p">
+                                <button class="flex text-base gap-12p min-w-fit items-center rounded-full border border-secondary pl-24p pr-[54px] py-8p transition duration-200 ease-in hover:bg-heading hover:text-page">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-18p">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                     </svg>
@@ -58,7 +93,7 @@
                                         SMK TI BALI GLOBAL DENPASAR
                                     </p>
                                 </button>
-                                <button class="flex text-base gap-12p min-w-fit items-center rounded-full border border-secondary pl-24p pr-[54px] py-8p">
+                                <button class="flex text-base gap-12p min-w-fit items-center rounded-full border border-secondary pl-24p pr-[54px] py-8p transition duration-200 ease-in hover:bg-heading hover:text-page">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-18p">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                     </svg>
@@ -70,8 +105,20 @@
                             <div class="w-full bg-tertiary h-[1px] mt-12p"></div>
                         </div>    
                     </div>
+
+                    <!-- star -->
+                    <div class="absolute top-0 right-[120px] hidden md:block z-0" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300">
+                        <img src="./src/assets/illustrations/star.svg" alt="" class="w-96p animate-spin-slow opacity-100" />
+                    </div>
+                    <div class="absolute bottom-48p left-0 hidden md:block z-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                        <img src="./src/assets/illustrations/star.svg" alt="" class="w-48p animate-spin-slow opacity-40" />
+                    </div>
+                    <div class="absolute bottom-96p right-0 hidden md:block z-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                        <img src="./src/assets/illustrations/star.svg" alt="" class="w-80p animate-spin-slow opacity-80" />
+                    </div>
+                    
                 </div>
-                <div class="col-span-3  flex flex-col md:grid grid-cols-3 gap-24p md:my-[72px] ">
+                <div class="relative col-span-3  flex flex-col md:grid grid-cols-3 gap-24p md:my-[72px] ">
                     <h1 class="text-2xl text-heading font-medium w-full place-self-center flex flex-col lg:text-display">
                         <span class="color-change " data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">Ida Bagus</span> 
                         <span class="color-change" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">Maha Indra</span> 
@@ -79,6 +126,10 @@
                     </h1>
                     <img class=" w-full h-[360px] object-cover rounded-xl md:col-span-2 lg:col-span-1" src="./src/assets/photos/hook_img.jpg" alt="" data-aos="fade-down" data-aos-duration="1500">
                     <div class="hidden lg:block bg-primary rounded-xl w-full h-full" data-aos="fade-up" data-aos-duration="1500"></div>
+
+                    <div class="absolute bottom-24p -left-[40px] hidden md:block z-0" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">
+                        <img src="./src/assets/illustrations/star.svg" alt="" class="w-10 animate-spin-slow opacity-20" />
+                    </div>    
                 </div>
 
 
@@ -189,14 +240,14 @@
                     </div>
                     
                     <div class="flex flex-col text-base col-span-2 lg:col-span-1">
-                        <button class="flex gap-12p h-fit p-24p border-b border-heading justify-start items-center text-left text-xs lg:text-base lg:p-36p" data-aos="fade-left" data-aos-duration="1500">
+                        <button class="flex gap-12p h-fit p-24p border-b border-primary justify-start items-center text-left text-xs lg:text-base lg:p-36p transition duration-200 ease-in hover:bg-primary hover:text-page">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12p">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
                             <p>SMK TI BALI GLOBAL DENPASAR</p>
                         </button>
 
-                        <button class="flex gap-12p h-fit p-24p border-t border-heading justify-start items-center text-left text-xs lg:text-base lg:p-36p" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
+                        <button class="flex gap-12p h-fit p-24p justify-start items-center text-left text-xs lg:text-base lg:p-36p transition duration-200 ease-in hover:bg-primary hover:text-page">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12p">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
@@ -259,6 +310,13 @@
 
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
+                let toggleBtn = document.querySelector("#menuToggleBtn").addEventListener('click', ()=>{
+                    let sidebar = document.querySelector("#sidebar");
+                    sidebar.classList.toggle("translate-x-[100%]")
+                    
+                    let darkOverlay = document.querySelector("#darkOverlay")
+                    darkOverlay.style.display ="block"    
+                })
                 AOS.init();
             </script>
         </body>
